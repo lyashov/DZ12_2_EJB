@@ -6,9 +6,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
 import java.io.IOException;
 
+/**
+ * Response http page, contains file tree on the specifed path
+ */
 @WebServlet("/tree")
 public class FileTreeServlet extends HttpServlet {
     @EJB
